@@ -1,15 +1,15 @@
-// import functions and grab DOM elements
-const welcomeElement = document.getElementById('welcome');
-const myButton = document.getElementById('change-button');
-const input = document.getElementById('user-input');
+const additionField = document.getElementById('add-input-1');
+const additionField2 = document.getElementById('add-input-2');
+const addButton = document.getElementById('add-button');
+const addResults = document.getElementById('add-results');
 
-// initialize state
 
-// set event listeners to update state and DOM
-myButton.addEventListener('click', () => {
-    // post-click logic goes here!
-    welcomeElement.style.color = 'magenta';
-    welcomeElement.style.background = 'lightgreen';
+addButton.addEventListener('click', () => {
+    // we have a type problem! these are strings -- we want numbers!
+    const fieldValue = additionField.valueAsNumber;
+    const fieldValue2 = additionField2.valueAsNumber;
 
-    welcomeElement.textContent = input.value;
+    const sum = fieldValue + fieldValue2;
+
+    addResults.textContent = sum;
 });
