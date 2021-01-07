@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 const welcomeElement = document.getElementById('welcome');
 const myButton = document.getElementById('change-button');
+const input = document.getElementById('user-input');
 
 // initialize state
 
@@ -10,5 +11,5 @@ myButton.addEventListener('click', () => {
     welcomeElement.style.color = 'magenta';
     welcomeElement.style.background = 'lightgreen';
 
-    welcomeElement.textContent = 'I CAN DO ANYTHING!!';
+    welcomeElement.textContent = input.value;
 });
