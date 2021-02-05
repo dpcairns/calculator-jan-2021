@@ -2,7 +2,8 @@
 
 ## Outcomes
  
-- Addition - GOAL: Display the sum of two numbers to the user
+- Addition 
+- GOAL: Display the sum of two numbers to the user
 -HTML SETUP: We should see on the screen: two user input boxes, a plus sign, and a button (there is also a secret box where we put the result)
  - Why: do we need the input box? Because that's where the user input lives so we can add the numbers
  - Why: do we need the button? We need something to click to tell the computer to show the answer
